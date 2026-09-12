@@ -1,0 +1,5 @@
+Contact: mailto:security@getpincr.com
+Policy: https://getpincr.com/security
+Canonical: https://getpincr.com/.well-known/security.txt
+Preferred-Languages: en
+Expires: 2027-09-11T00:00:00Z
