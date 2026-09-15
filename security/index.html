@@ -1,2 +1,122 @@
-<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Security | PINCR</title><link rel="canonical" href="https://getpincr.com/security"><link rel="stylesheet" href="/assets/index-Ds2Et_wY.css"></head><body><main class="shell" style="padding:8rem 1.5rem"><p class="eyebrow">PINCR · Security</p><h1>Report a suspected security issue directly.</h1><p>Email <a href="mailto:security@getpincr.com">security@getpincr.com</a> with the affected component or URL, reproduction steps, impact, and safely shareable evidence.</p><h2>Scope and handling</h2><p>Reports may concern RF, published installation material, this site, or a PINCR-controlled service. PINCR records each finding as resolved, accepted, mitigated, or blocking. Do not include secrets or customer data in an initial report.</p><p>Please allow reasonable time for investigation before public disclosure. No response-time, bounty, or disclosure deadline is promised.</p><p><a href="/.well-known/security.txt">Machine-readable policy</a> · <a href="/">Return to PINCR</a></p></main></body></html>
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="/assets/index-DgttE2dU.css" data-rsc-css-href="/assets/index-DgttE2dU.css" data-precedence="vite-rsc/importer-resources"/><link rel="modulepreload" href="/assets/layout-segment-context-BAUgImdu.js" crossorigin=""/><link rel="modulepreload" href="/assets/rolldown-runtime-S-ySWqyJ.js" crossorigin=""/><link rel="modulepreload" href="/assets/index-CN0VCPKG.js" crossorigin=""/><link rel="modulepreload" href="/assets/framework-DjPHiq1u.js" crossorigin=""/><link rel="modulepreload" href="/assets/link-Dm8HWbyX.js" crossorigin=""/><link rel="modulepreload" href="/assets/query-DZOG5WwV.js" crossorigin=""/><title>Security | PINCR</title><meta name="description" content="Report a suspected security issue to PINCR."/><meta property="og:title" content="PINCR — Autonomous systems need a way back."/><meta property="og:description" content="Proof before authority for autonomous production change, starting with transactional PostgreSQL."/><meta property="og:url" content="https://getpincr.com"/><meta property="og:site_name" content="PINCR"/><meta property="og:type" content="website"/><meta property="og:image" content="https://getpincr.com/og-pincr.png"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image:alt" content="PINCR — Autonomous systems need a way back."/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="PINCR — Autonomous systems need a way back."/><meta name="twitter:description" content="Recovery-conditioned authorization for autonomous production."/><meta name="twitter:image" content="https://getpincr.com/og-pincr.png"/><link rel="icon" href="https://getpincr.com/pincr-symbol.svg" type="image/svg+xml"/><link rel="icon" href="https://getpincr.com/pincr-symbol.png" type="image/png"/><link rel="apple-touch-icon" href="https://getpincr.com/pincr-symbol.png"/><link rel="canonical" href="https://getpincr.com/security"/><script>self.__VINEXT_RSC_PARAMS__={}</script><script>self.__VINEXT_RSC_NAV__={"pathname":"/security","searchParams":[]}</script><link rel="modulepreload" href="/assets/index-CN0VCPKG.js" />
+<link rel="preload" href="/assets/_vinext_fonts/geist-8ac0455e797f/geist-ff2310f5.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/assets/_vinext_fonts/geist-8ac0455e797f/geist-875ccdd4.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/assets/_vinext_fonts/geist-8ac0455e797f/geist-52306abf.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/assets/_vinext_fonts/geist-8ac0455e797f/geist-001175b1.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/assets/_vinext_fonts/geist-8ac0455e797f/geist-98bbbccb.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/assets/_vinext_fonts/geist-mono-00e989178794/geist-mono-f6b33328.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/assets/_vinext_fonts/geist-mono-00e989178794/geist-mono-44e03052.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/assets/_vinext_fonts/geist-mono-00e989178794/geist-mono-0638449e.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/assets/_vinext_fonts/geist-mono-00e989178794/geist-mono-971fb274.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/assets/_vinext_fonts/geist-mono-00e989178794/geist-mono-44745446.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/assets/_vinext_fonts/geist-mono-00e989178794/geist-mono-013b2f2f.woff2" as="font" type="font/woff2" crossorigin />
+<style data-vinext-fonts>/* cyrillic-ext */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(/assets/_vinext_fonts/geist-8ac0455e797f/geist-ff2310f5.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(/assets/_vinext_fonts/geist-8ac0455e797f/geist-875ccdd4.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(/assets/_vinext_fonts/geist-8ac0455e797f/geist-52306abf.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(/assets/_vinext_fonts/geist-8ac0455e797f/geist-001175b1.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Geist';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(/assets/_vinext_fonts/geist-8ac0455e797f/geist-98bbbccb.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+.__font_geist_0vnb3t8 { font-family: 'Geist', sans-serif; }
+
+.__variable_geist_0vnb3t8 { --font-geist-sans: 'Geist', sans-serif; }
+
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(/assets/_vinext_fonts/geist-mono-00e989178794/geist-mono-f6b33328.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(/assets/_vinext_fonts/geist-mono-00e989178794/geist-mono-44e03052.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* symbols2 */
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(/assets/_vinext_fonts/geist-mono-00e989178794/geist-mono-0638449e.woff2) format('woff2');
+  unicode-range: U+2000-2001, U+2004-2008, U+200A, U+23B8-23BD, U+2500-259F;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(/assets/_vinext_fonts/geist-mono-00e989178794/geist-mono-971fb274.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(/assets/_vinext_fonts/geist-mono-00e989178794/geist-mono-44745446.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Geist Mono';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(/assets/_vinext_fonts/geist-mono-00e989178794/geist-mono-013b2f2f.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+.__font_geist_mono_0a5lji1 { font-family: 'Geist Mono', sans-serif; }
+
+.__variable_geist_mono_0a5lji1 { --font-geist-mono: 'Geist Mono', sans-serif; }
+</style>
+</head><body class="__variable_geist_0vnb3t8 __variable_geist_mono_0a5lji1"><main><header class="site-header"><a href="/" class="brand" aria-label="PINCR home"><svg aria-hidden="true" class="brand-symbol" focusable="false" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><path d="M27.8 3.5c-.6 8.2-4.1 13.2-10.2 18.5-4.5 3.9-6.4 6.9-6.4 11.8v8.4c5.9 6.3 11.2 11.4 16.6 18.3-1.2-7.5-3.8-12.3-6.7-17.2-2.3-4-3.2-7.2-2.5-11.1.8-4.8 4.7-9.4 7-14.2 2.1-4.2 2.8-8.8 2.2-14.5Z" fill="currentColor"></path><path d="M36.2 3.5c.6 8.2 4.1 13.2 10.2 18.5 4.5 3.9 6.4 6.9 6.4 11.8v8.4c-5.9 6.3-11.2 11.4-16.6 18.3 1.2-7.5 3.8-12.3 6.7-17.2 2.3-4 3.2-7.2 2.5-11.1-.8-4.8-4.7-9.4-7-14.2-2.1-4.2-2.8-8.8-2.2-14.5Z" fill="currentColor"></path></svg><span class="brand-type"><strong>PINCR</strong><span>RECOVERABILITY FIREWALL</span></span></a><nav aria-label="Primary navigation"><a href="/support">Support</a><a class="nav-cta" href="mailto:security@getpincr.com">Report an issue</a></nav></header><section class="public-page-hero public-page-hero-dark"><div class="public-page-hero-copy shell"><p class="eyebrow">PINCR · SECURITY</p><h1>Report a suspected security issue directly.</h1><p class="public-page-intro">Clear reporting, bounded claims, and a direct line to the team responsible.</p></div></section><section class="public-page-content"><div class="public-page-grid shell"><div class="section-label"><span>01</span><p>Report safely</p></div><div class="public-page-main"><p class="section-kicker">Responsible reporting</p><h2>Show the issue.<br/>Protect the data.</h2><p class="public-page-lede">Email <a class="inline-link" href="mailto:security@getpincr.com">security@getpincr.com</a> with the affected component or URL, reproduction steps, impact, and safely shareable evidence.</p><div class="public-page-cards"><article><span>SCOPE</span><h3>What to report</h3><p>RF, published installation material, this site, or another PINCR-controlled service.</p></article><article><span>HANDLING</span><h3>What happens next</h3><p>PINCR records each finding as resolved, accepted, mitigated, or blocking. Do not include secrets or customer data initially.</p></article></div><p class="public-page-note">Please allow reasonable time for investigation before public disclosure. No response-time, bounty, or disclosure deadline is promised. <a class="inline-link" href="/.well-known/security.txt">Machine-readable policy</a>.</p></div></div></section><footer class="site-footer shell"><a href="/" class="footer-brand"><svg aria-hidden="true" class="footer-symbol" focusable="false" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><path d="M27.8 3.5c-.6 8.2-4.1 13.2-10.2 18.5-4.5 3.9-6.4 6.9-6.4 11.8v8.4c5.9 6.3 11.2 11.4 16.6 18.3-1.2-7.5-3.8-12.3-6.7-17.2-2.3-4-3.2-7.2-2.5-11.1.8-4.8 4.7-9.4 7-14.2 2.1-4.2 2.8-8.8 2.2-14.5Z" fill="currentColor"></path><path d="M36.2 3.5c.6 8.2 4.1 13.2 10.2 18.5 4.5 3.9 6.4 6.9 6.4 11.8v8.4c-5.9 6.3-11.2 11.4-16.6 18.3 1.2-7.5 3.8-12.3 6.7-17.2 2.3-4 3.2-7.2 2.5-11.1-.8-4.8-4.7-9.4-7-14.2-2.1-4.2-2.8-8.8-2.2-14.5Z" fill="currentColor"></path></svg><span class="footer-type"><strong>PINCR</strong><span>RECOVERABILITY FIREWALL</span></span></a><p>Recoverability-conditioned authority for autonomous production.</p><div><a href="/">Company</a><a href="/support">Support</a></div><small>© 2026 PINCR</small></footer></main><script id="_R_">import("/assets/index-CN0VCPKG.js")</script></body></html><script>self.__VINEXT_RSC_CHUNKS__=self.__VINEXT_RSC_CHUNKS__||[];self.__VINEXT_RSC_CHUNKS__.push("2:I[\"8c0f216c4604\",[],\"Children\",1]\n3:I[\"15c18cfaeeff\",[],\"LayoutSegmentProvider\",1]\n4:I[\"8c0f216c4604\",[],\"Slot\",1]\n5:I[\"593f344dc510\",[],\"RedirectBoundary\",1]\n:HL[\"/assets/index-DgttE2dU.css\",\"style\"]\n")</script><script>self.__VINEXT_RSC_CHUNKS__=self.__VINEXT_RSC_CHUNKS__||[];self.__VINEXT_RSC_CHUNKS__.push("0:{\"__route\":\"route:/security\",\"__interceptionContext\":null,\"__layoutIds\":[\"layout:/\"],\"__rootLayout\":\"/\",\"page:/security\":\"$L1\",\"layout:/\":[[[[\"$\",\"link\",\"css:/assets/index-DgttE2dU.css\",{\"rel\":\"stylesheet\",\"precedence\":\"vite-rsc/importer-resources\",\"href\":\"/assets/index-DgttE2dU.css\",\"data-rsc-css-href\":\"/assets/index-DgttE2dU.css\"}],\"$undefined\"],[\"$\",\"html\",null,{\"lang\":\"en\",\"children\":[\"$\",\"body\",null,{\"className\":\"__variable_geist_0vnb3t8 __variable_geist_mono_0a5lji1\",\"children\":[\"$\",\"$L2\",null,{}]}]}]],null],\"route:/security\":[[[\"$\",\"meta\",null,{\"charSet\":\"utf-8\"}],[[\"$\",\"title\",\"0\",{\"children\":\"Security | PINCR\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"Report a suspected security issue to PINCR.\"}],[\"$\",\"meta\",\"2\",{\"property\":\"og:title\",\"content\":\"PINCR — Autonomous systems need a way back.\"}],[\"$\",\"meta\",\"3\",{\"property\":\"og:description\",\"content\":\"Proof before authority for autonomous production change, starting with transactional PostgreSQL.\"}],[\"$\",\"meta\",\"4\",{\"property\":\"og:url\",\"content\":\"https://getpincr.com\"}],[\"$\",\"meta\",\"5\",{\"property\":\"og:site_name\",\"content\":\"PINCR\"}],[\"$\",\"meta\",\"6\",{\"property\":\"og:type\",\"content\":\"website\"}],[\"$\",\"meta\",\"7\",{\"property\":\"og:image\",\"content\":\"https://getpincr.com/og-pincr.png\"}],[\"$\",\"meta\",\"8\",{\"property\":\"og:image:width\",\"content\":\"1200\"}],[\"$\",\"meta\",\"9\",{\"property\":\"og:image:height\",\"content\":\"630\"}],[\"$\",\"meta\",\"10\",{\"property\":\"og:image:alt\",\"content\":\"PINCR — Autonomous systems need a way back.\"}],[\"$\",\"meta\",\"11\",{\"name\":\"twitter:card\",\"content\":\"summary_large_image\"}],[\"$\",\"meta\",\"12\",{\"name\":\"twitter:title\",\"content\":\"PINCR — Autonomous systems need a way back.\"}],[\"$\",\"meta\",\"13\",{\"name\":\"twitter:description\",\"content\":\"Recovery-conditioned authorization for autonomous production.\"}],[\"$\",\"meta\",\"14\",{\"name\":\"twitter:image\",\"content\":\"https://getpincr.com/og-pincr.png\"}],[\"$\",\"link\",\"15\",{\"rel\":\"icon\",\"href\":\"https://getpincr.com/pincr-symbol.svg\",\"type\":\"image/svg+xml\"}],[\"$\",\"link\",\"16\",{\"rel\":\"icon\",\"href\":\"https://getpincr.com/pincr-symbol.png\",\"type\":\"image/png\"}],[\"$\",\"link\",\"17\",{\"rel\":\"apple-touch-icon\",\"href\":\"https://getpincr.com/pincr-symbol.png\"}],[\"$\",\"link\",\"18\",{\"rel\":\"canonical\",\"href\":\"https://getpincr.com/security\"}]],[[\"$\",\"meta\",\"0\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]],[\"$\",\"$L3\",null,{\"segmentMap\":{\"children\":[\"security\"]},\"children\":[\"$\",\"$L4\",null,{\"id\":\"layout:/\",\"parallelSlots\":\"$undefined\",\"children\":[\"$\",\"$L5\",null,{\"children\":[\"$\",\"$L3\",null,{\"segmentMap\":{\"children\":[]},\"children\":[\"$\",\"$L4\",null,{\"id\":\"page:/security\"}]}]}]}]}]],\"__layoutFlags\":{\"layout:/\":\"s\"},\"__artifactCompatibility\":{\"schemaVersion\":1,\"graphVersion\":\"app-route-graph:48mk3r1iwtg0k\",\"deploymentVersion\":\"78bd48e6-93e8-4d6c-bfbb-ce7440268aa2\",\"appElementsSchemaVersion\":1,\"rscPayloadSchemaVersion\":1,\"rootBoundaryId\":\"/\",\"renderEpoch\":null}}\n")</script><script>self.__VINEXT_RSC_CHUNKS__=self.__VINEXT_RSC_CHUNKS__||[];self.__VINEXT_RSC_CHUNKS__.push("6:I[\"c2747888630f\",[],\"default\",1]\n")</script><script>self.__VINEXT_RSC_CHUNKS__=self.__VINEXT_RSC_CHUNKS__||[];self.__VINEXT_RSC_CHUNKS__.push("1:[\"$\",\"main\",null,{\"children\":[[\"$\",\"header\",null,{\"className\":\"site-header\",\"children\":[[\"$\",\"$L6\",null,{\"className\":\"brand\",\"href\":\"/\",\"aria-label\":\"PINCR home\",\"children\":[[\"$\",\"svg\",null,{\"aria-hidden\":\"true\",\"className\":\"brand-symbol\",\"focusable\":\"false\",\"viewBox\":\"0 0 64 64\",\"xmlns\":\"http://www.w3.org/2000/svg\",\"children\":[[\"$\",\"path\",null,{\"d\":\"M27.8 3.5c-.6 8.2-4.1 13.2-10.2 18.5-4.5 3.9-6.4 6.9-6.4 11.8v8.4c5.9 6.3 11.2 11.4 16.6 18.3-1.2-7.5-3.8-12.3-6.7-17.2-2.3-4-3.2-7.2-2.5-11.1.8-4.8 4.7-9.4 7-14.2 2.1-4.2 2.8-8.8 2.2-14.5Z\",\"fill\":\"currentColor\"}],[\"$\",\"path\",null,{\"d\":\"M36.2 3.5c.6 8.2 4.1 13.2 10.2 18.5 4.5 3.9 6.4 6.9 6.4 11.8v8.4c-5.9 6.3-11.2 11.4-16.6 18.3 1.2-7.5 3.8-12.3 6.7-17.2 2.3-4 3.2-7.2 2.5-11.1-.8-4.8-4.7-9.4-7-14.2-2.1-4.2-2.8-8.8-2.2-14.5Z\",\"fill\":\"currentColor\"}]]}],[\"$\",\"span\",null,{\"className\":\"brand-type\",\"children\":[[\"$\",\"strong\",null,{\"children\":\"PINCR\"}],[\"$\",\"span\",null,{\"children\":\"RECOVERABILITY FIREWALL\"}]]}]]}],[\"$\",\"nav\",null,{\"aria-label\":\"Primary navigation\",\"children\":[[\"$\",\"$L6\",null,{\"href\":\"/support\",\"children\":\"Support\"}],[\"$\",\"a\",null,{\"className\":\"nav-cta\",\"href\":\"mailto:security@getpincr.com\",\"children\":\"Report an issue\"}]]}]]}],[\"$\",\"section\",null,{\"className\":\"public-page-hero public-page-hero-dark\",\"children\":[\"$\",\"div\",null,{\"className\":\"public-page-hero-copy shell\",\"children\":[[\"$\",\"p\",null,{\"className\":\"eyebrow\",\"children\":\"PINCR · SECURITY\"}],[\"$\",\"h1\",null,{\"children\":\"Report a suspected security issue directly.\"}],[\"$\",\"p\",null,{\"className\":\"public-page-intro\",\"children\":\"Clear reporting, bounded claims, and a direct line to the team responsible.\"}]]}]}],[\"$\",\"section\",null,{\"className\":\"public-page-content\",\"children\":[\"$\",\"div\",null,{\"className\":\"public-page-grid shell\",\"children\":[[\"$\",\"div\",null,{\"className\":\"section-label\",\"children\":[[\"$\",\"span\",null,{\"children\":\"01\"}],[\"$\",\"p\",null,{\"children\":\"Report safely\"}]]}],[\"$\",\"div\",null,{\"className\":\"public-page-main\",\"children\":[[\"$\",\"p\",null,{\"className\":\"section-kicker\",\"children\":\"Responsible reporting\"}],[\"$\",\"h2\",null,{\"children\":[\"Show the issue.\",[\"$\",\"br\",null,{}],\"Protect the data.\"]}],[\"$\",\"p\",null,{\"className\":\"public-page-lede\",\"children\":[\"Email \",[\"$\",\"a\",null,{\"className\":\"inline-link\",\"href\":\"mailto:security@getpincr.com\",\"children\":\"security@getpincr.com\"}],\" with the affected component or URL, reproduction steps, impact, and safely shareable evidence.\"]}],[\"$\",\"div\",null,{\"className\":\"public-page-cards\",\"children\":[[\"$\",\"article\",null,{\"children\":[[\"$\",\"span\",null,{\"children\":\"SCOPE\"}],[\"$\",\"h3\",null,{\"children\":\"What to report\"}],[\"$\",\"p\",null,{\"children\":\"RF, published installation material, this site, or another PINCR-controlled service.\"}]]}],[\"$\",\"article\",null,{\"children\":[[\"$\",\"span\",null,{\"children\":\"HANDLING\"}],[\"$\",\"h3\",null,{\"children\":\"What happens next\"}],[\"$\",\"p\",null,{\"children\":\"PINCR records each finding as resolved, accepted, mitigated, or blocking. Do not include secrets or customer data initially.\"}]]}]]}],[\"$\",\"p\",null,{\"className\":\"public-page-note\",\"children\":[\"Please allow reasonable time for investigation before public disclosure. No response-time, bounty, or disclosure deadline is promised. \",[\"$\",\"a\",null,{\"className\":\"inline-link\",\"href\":\"/.well-known/security.txt\",\"children\":\"Machine-readable policy\"}],\".\"]}]]}]]}]}],[\"$\",\"footer\",null,{\"className\":\"site-footer shell\",\"children\":[[\"$\",\"$L6\",null,{\"className\":\"footer-brand\",\"href\":\"/\",\"children\":[[\"$\",\"svg\",null,{\"aria-hidden\":\"true\",\"className\":\"footer-symbol\",\"focusable\":\"false\",\"viewBox\":\"0 0 64 64\",\"xmlns\":\"http://www.w3.org/2000/svg\",\"children\":[[\"$\",\"path\",null,{\"d\":\"M27.8 3.5c-.6 8.2-4.1 13.2-10.2 18.5-4.5 3.9-6.4 6.9-6.4 11.8v8.4c5.9 6.3 11.2 11.4 16.6 18.3-1.2-7.5-3.8-12.3-6.7-17.2-2.3-4-3.2-7.2-2.5-11.1.8-4.8 4.7-9.4 7-14.2 2.1-4.2 2.8-8.8 2.2-14.5Z\",\"fill\":\"currentColor\"}],[\"$\",\"path\",null,{\"d\":\"M36.2 3.5c.6 8.2 4.1 13.2 10.2 18.5 4.5 3.9 6.4 6.9 6.4 11.8v8.4c-5.9 6.3-11.2 11.4-16.6 18.3 1.2-7.5 3.8-12.3 6.7-17.2 2.3-4 3.2-7.2 2.5-11.1-.8-4.8-4.7-9.4-7-14.2-2.1-4.2-2.8-8.8-2.2-14.5Z\",\"fill\":\"currentColor\"}]]}],[\"$\",\"span\",null,{\"className\":\"footer-type\",\"children\":[[\"$\",\"strong\",null,{\"children\":\"PINCR\"}],[\"$\",\"span\",null,{\"children\":\"RECOVERABILITY FIREWALL\"}]]}]]}],\"$L7\",\"$L8\",\"$L9\"]}]]}]\n")</script><script>self.__VINEXT_RSC_CHUNKS__=self.__VINEXT_RSC_CHUNKS__||[];self.__VINEXT_RSC_CHUNKS__.push("7:[\"$\",\"p\",null,{\"children\":\"Recoverability-conditioned authority for autonomous production.\"}]\n8:[\"$\",\"div\",null,{\"children\":[[\"$\",\"$L6\",null,{\"href\":\"/\",\"children\":\"Company\"}],[\"$\",\"$L6\",null,{\"href\":\"/support\",\"children\":\"Support\"}]]}]\n9:[\"$\",\"small\",null,{\"children\":\"© 2026 PINCR\"}]\n")</script><script>self.__VINEXT_RSC_DONE__=true</script>
