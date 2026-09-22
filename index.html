@@ -153,12 +153,12 @@
             <p>RF’s qualification history includes more than successful runs. Unsafe paths, failed qualification runs, and refusal cases were retained as evidence and used to change the architecture.</p>
           </div>
           <div class="evidence-timeline" aria-label="RF evidence and qualification history">
-            <article class="arc-step"><span>01 · FOUNDATION</span><h3>Authority is bound</h3><p>Exact action, live state, expiry, and atomic permit consumption are enforced at the protected resource.</p></article>
-            <article class="arc-step"><span>02 · ADVERSARIAL</span><h3>Unsafe paths are tested</h3><p>Registered attacks, negative controls, and refusal conditions test that RF does more than approve happy paths.</p></article>
-            <article class="arc-step"><span>03 · CORRECTION</span><h3>Bad paths are rejected</h3><p>Qualification surfaced unsafe designs and defects; corrective releases changed the system instead of weakening the claim.</p></article>
-            <article class="arc-step"><span>04 · WITNESSES</span><h3>One Core, three models</h3><p>PostgreSQL, Kubernetes, and Linux exercise authority bound to execution, admission, and capabilities.</p></article>
-            <article class="arc-step"><span>05 · DISTRIBUTED</span><h3>Failure becomes evidence</h3><p>Recovery and HA work preserved both passing outcomes and permanent negative evidence from failed runs.</p></article>
-            <article class="arc-step"><span>06 · SUSTAINED</span><h3>Recovery is repeated</h3><p>A AWS recovery campaign lasting three hours recorded 2,338 passing pairs across six lanes of 30 minutes, each using a fresh table.</p></article>
+<article class="arc-step"><span>01 / FOUNDATION</span><h3>A permit has limits</h3><p>RF binds every permit to one action, the current state, an expiry time, and one execution at the protected resource.</p></article>
+<article class="arc-step"><span>02 / ADVERSARIAL TESTS</span><h3>Unsafe paths are part of the test</h3><p>Registered attacks, negative controls, and refusal cases show that RF does more than approve successful cases.</p></article>
+<article class="arc-step"><span>03 / CORRECTION</span><h3>Evidence changes the system</h3><p>Qualification exposed unsafe designs and defects. The fixes changed the architecture and preserved the claim boundary.</p></article>
+<article class="arc-step"><span>04 / WITNESSES</span><h3>The core works in three settings</h3><p>PostgreSQL, Kubernetes, and Linux test the core across execution, admission, and capability authority.</p></article>
+<article class="arc-step"><span>05 / DISTRIBUTED SYSTEMS</span><h3>Failures stay in the record</h3><p>Recovery and HA work preserved successful outcomes and permanent evidence from runs that failed.</p></article>
+<article class="arc-step"><span>06 / ENDURANCE</span><h3>Recovery holds over time</h3><p>The three hour AWS campaign recorded 2,338 passing recovery pairs. It used six fresh tables, each for 30 minutes.</p></article>
           </div>
           <p><a href="/qualification/">Read the AWS campaign record →</a></p><p class="operator-note">Campaign evidence does not establish qualification for loss of a leader or quorum, external production acceptance, or universal recoverability.</p><div class="arc-footer"><span>THE POINT IS NOT “NO FAILURES.”</span><b>THE POINT IS THAT FAILURES CHANGED THE SYSTEM.</b></div>
         </div>
