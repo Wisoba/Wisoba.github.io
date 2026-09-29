@@ -1,0 +1,154 @@
+/* PINCR refinement layer.
+ *
+ * Loaded after the built stylesheet so it can adjust the deployed page without
+ * rebuilding it from source. Additive only: every rule here either adds the
+ * masthead band or corrects a defect in the built CSS. Nothing here restyles a
+ * component wholesale, because this file has to stay readable to the next
+ * person who edits the live site by hand. The maintenance rules for this
+ * site live in SITE_HANDOFF.md in the PINCR_INFRA_PUBLIC source repository,
+ * sections 5, 5b and 9.
+ */
+
+/* ---------------------------------------------------------------------------
+ * 1. Anchor targets clearing the fixed header
+ *
+ * .site-header is position:fixed at 84px (74px under 720px), and the built CSS
+ * sets no scroll-margin, so every nav link parked its target underneath the bar
+ * and the section heading was invisible on arrival.
+ * ------------------------------------------------------------------------- */
+:root {
+  --header-clearance: 84px;
+  --band-height: clamp(220px, 27vw, 380px);
+}
+
+html {
+  scroll-padding-top: calc(var(--header-clearance) + 24px);
+}
+
+[id] {
+  scroll-margin-top: calc(var(--header-clearance) + 24px);
+}
+
+/* ---------------------------------------------------------------------------
+ * 2. Masthead band
+ *
+ * Full-bleed imagery between the header and the hero. The source art is a
+ * LinkedIn banner whose own headline was cropped away before publishing: the
+ * page states that claim in its own type, and two competing headlines read as
+ * an advert rather than a product. What remains is the sequence the product
+ * describes — authority offered, proof checked, resource decides.
+ *
+ * The band dissolves into --paper at its lower edge rather than ending on a
+ * hard line, so it reads as part of the page instead of a pasted-in image.
+ *
+ * It is drawn as a pseudo-element, not a DOM node: index.html is a prerendered
+ * RSC page, React hydrates over it and deletes any element that is not in the
+ * component tree, which is what happened to the first attempt at this. A
+ * ::before belongs to the CSS box, so hydration never sees it.
+ * ------------------------------------------------------------------------- */
+.hero {
+  position: relative;
+  padding-top: calc(var(--header-clearance) + var(--band-height)) !important;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: var(--header-clearance);
+  left: 0;
+  right: 0;
+  height: var(--band-height);
+  pointer-events: none;
+  /* Three layers, painted front to back: a side wash, a bottom wash, then the
+   * photograph. The washes are the page's own paper colour, so the art
+   * dissolves into the page instead of ending on a hard edge. This is done with
+   * plain gradients rather than mask-composite, which renders inconsistently
+   * across engines and is not worth the fragility for a decorative band. */
+  background-image:
+    linear-gradient(to right,
+      var(--paper) 0%,
+      rgba(245, 245, 243, 0) 14%,
+      rgba(245, 245, 243, 0) 86%,
+      var(--paper) 100%),
+    linear-gradient(to bottom,
+      rgba(245, 245, 243, 0) 45%,
+      var(--paper) 100%),
+    url("/assets/pincr-authority-band.webp");
+  background-size: 100% 100%, 100% 100%, cover;
+  background-position: center, center, center 52%;
+  background-repeat: no-repeat;
+}
+
+/* The hero's own grid reserves 790px of height for the decision console. With
+ * the band above it the fold gets pushed too far down, so recover the slack. */
+.hero .hero-grid {
+  min-height: 0;
+  padding-top: clamp(32px, 4vw, 64px);
+}
+
+@media (max-width: 720px) {
+  :root {
+    --header-clearance: 74px;
+    --band-height: clamp(160px, 46vw, 240px);
+  }
+}
+
+/* ---------------------------------------------------------------------------
+ * 3. Typographic settling
+ *
+ * Headlines in the built CSS break wherever the column happens to end, which
+ * leaves single-word last lines on several section headings. text-wrap:balance
+ * is ignored by engines that do not support it, so this degrades to today's
+ * behaviour rather than to something worse.
+ * ------------------------------------------------------------------------- */
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}
+
+.hero-lede,
+.section-heading p,
+.operator-note {
+  text-wrap: pretty;
+}
+
+/* ---------------------------------------------------------------------------
+ * 4. Keyboard focus
+ *
+ * The built CSS defines one focus-visible rule. Anything it misses falls back
+ * to the user agent ring, which disappears against the dark sections.
+ * ------------------------------------------------------------------------- */
+a:focus-visible,
+button:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.section-dark a:focus-visible,
+.arc-footer a:focus-visible {
+  outline-color: var(--white);
+}
+
+/* ---------------------------------------------------------------------------
+ * 5. Evidence boundary
+ *
+ * .operator-note carries the sentence that says what the campaign did not
+ * establish. It sat at body weight and read as one more descriptive line. It
+ * is a claim boundary, so it is set apart without being made loud.
+ * ------------------------------------------------------------------------- */
+.operator-note {
+  border-left: 2px solid var(--line);
+  margin-top: 28px;
+  padding-left: 18px;
+  max-width: 78ch;
+  color: var(--muted);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
