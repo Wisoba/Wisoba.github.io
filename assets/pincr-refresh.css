@@ -114,6 +114,68 @@ h3 {
 }
 
 /* ---------------------------------------------------------------------------
+ * 6. Three-product architecture
+ *
+ * PostgreSQL, Kubernetes, and Linux are peer entry products. The original
+ * evidence list visually subordinated two domains to the database wedge; this
+ * grid gives every native authority boundary equal weight while keeping the
+ * common RF protocol above them.
+ * ------------------------------------------------------------------------- */
+.products .evidence-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-left: 1px solid #cfd2d0;
+}
+
+.products .evidence-list article {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(52px, 7vw, 92px);
+  min-height: 430px;
+  padding: clamp(28px, 3vw, 44px);
+  border-right: 1px solid #cfd2d0;
+}
+
+.products .evidence-witness {
+  align-content: start;
+  gap: 22px;
+}
+
+.products .evidence-witness strong {
+  max-width: 10ch;
+  font-size: clamp(2rem, 3.1vw, 3.75rem);
+  line-height: .94;
+}
+
+.products .evidence-detail {
+  margin-top: auto;
+}
+
+.products .evidence-detail p {
+  font-size: .94rem;
+  line-height: 1.62;
+}
+
+.domain-products .operator-path code {
+  color: var(--accent-dark);
+  letter-spacing: .08em;
+}
+
+@media (max-width: 980px) {
+  .products .evidence-list {
+    grid-template-columns: 1fr;
+  }
+
+  .products .evidence-list article {
+    min-height: 0;
+  }
+
+  .products .evidence-witness strong {
+    max-width: none;
+  }
+}
+
+/* ---------------------------------------------------------------------------
  * 4. Keyboard focus
  *
  * The built CSS defines one focus-visible rule. Anything it misses falls back
