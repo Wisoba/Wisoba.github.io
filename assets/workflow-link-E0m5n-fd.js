@@ -1,0 +1,1 @@
+import{r as e}from"./framework-DjPHiq1u.js";var t=e();function n({domain:e,children:n}){return(0,t.jsx)(`a`,{className:`text-link`,href:`#evaluation-request`,onClick:()=>window.dispatchEvent(new CustomEvent(`pincr:evaluation-domain`,{detail:e})),children:n})}export{n as default};
