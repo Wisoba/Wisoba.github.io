@@ -1,0 +1,1 @@
+import{r as e}from"./framework-DjPHiq1u.js";import t from"./section-link-DhbKQ0JC.js";var n=e();function r({domain:e,children:r}){return(0,n.jsx)(t,{className:`text-link`,href:`#evaluation-request`,onClick:()=>window.dispatchEvent(new CustomEvent(`pincr:evaluation-domain`,{detail:e})),children:r})}export{r as default};
